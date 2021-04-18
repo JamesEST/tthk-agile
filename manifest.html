@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/manifest.css">
+    <script src="https://kit.fontawesome.com/baf6fdf2b4.js" crossorigin="anonymous"></script>
+    <title>Manifest</title>
+</head>
+<body>
+    <div class="recipe-card">
+        <aside>
+            <img src="./img/12-Principles-of-Agile-Manifesto-1068x552-1.jpg" alt="Chai Oatmeal" />
+            <a href="index.html" class="button"><i class="fas fa-home" id="icon-home"></i></span></a>
+        </aside>
+        <article>
+            <button class="accordion">Our highest priority is to satisfy the customer
+                through early and continuous delivery
+                of valuable software.</button>
+            <div class="panel">
+                <p>Я согласен с этим потому что в каждом проекте самое главное это удовлетворить клиента, без клиентов нечего бы не было и проект бы не жил.</p>
+            </div>
+            <button class="accordion">Welcome changing requirements, even late in
+                development. Agile processes harness change for
+                the customer's competitive advantage.</button>
+            <div class="panel">
+                <p>Я думаю что в каких то проектах это будет отличным вариантом, а в других это может вызвать большие проблемы, поэтому все зависит от проекта.</p>
+            </div>
+            <button class="accordion">Deliver working software frequently, from a
+                couple of weeks to a couple of months, with a
+                preference to the shorter timescale.</button>
+            <div class="panel">
+                <p>Есть такое выражение как быстро не значит что качественно, поэтому надо ставить рамки так чтобы качественно тоже не страдало, но и при этом было бы быстрее.</p>
+            </div>
+            <button class="accordion">Business people and developers must work
+                together daily throughout the project.</button>
+            <div class="panel">
+                <p>Думаю что лучше будет конечно если будут работать вмести, конечно могут быть какие то не состыковки, потому что бизнесмен хочет быстро и качественно, а тот кто делает не может сделать и быстро и качественно. Но за то тот кто делает может понять что надо сделать быстрее и что лучше всего отложить.</p>
+            </div>
+            <button class="accordion">Build projects around motivated individuals.
+                Give them the environment and support they need,
+                and trust them to get the job done.</button>
+            <div class="panel">
+                <p>Если сделать такое условие труда то люди начнут работать намного лучше, потому что люди любят работать там где им больше нравится, а не там где на них постоянно орут или место где он работает похоже на помойку.</p>
+            </div>
+            <button class="accordion">The most efficient and effective method of
+                conveying information to and within a development
+                team is face-to-face conversation.</button>
+            <div class="panel">
+                <p>Я считаю что да, потому что тут никто не заменит слова или еще что-то. Ты получишь информации в том виде в котором и надо было бы. Часто так бывает кто-то пересказал что надо сделать, а в итоги надо было сделать наоборот.</p>
+            </div>
+            <button class="accordion">Working software is the primary measure of progress.</button>
+            <div class="panel">
+                <p>Я думаю что нет. Может этот "рабочий" проект завтра уже сломается и тогда это уже не будут основным показателем.</p>
+            </div>
+            <button class="accordion">Agile processes promote sustainable development.
+                The sponsors, developers, and users should be able
+                to maintain a constant pace indefinitely.</button>
+            <div class="panel">
+                <p>Главное что если что-то меняется это повело за собой спад качественно и удовлетворенность клиента.</p>
+            </div>
+            <button class="accordion">Continuous attention to technical excellence
+                and good design enhances agility.</button>
+            <div class="panel">
+                <p>Каждый день все меняется, поэтому всегда надо идти только вперед и думать как сделать лучше, чем было. </p>
+            </div>
+            <button class="accordion">Simplicity--the art of maximizing the amount
+                of work not done--is essential.</button>
+            <div class="panel">
+                <p>Чем проще сделан проет, тем лучше ибо его можно будет спокойно изменить или переделать.</p>
+            </div>
+            <button class="accordion">The best architectures, requirements, and designs
+                emerge from self-organizing teams.</button>
+            <div class="panel">
+                <p>Хм, возможно но я немогу сказать точно.</p>
+            </div>
+            <button class="accordion">At regular intervals, the team reflects on how
+                to become more effective, then tunes and adjusts
+                its behavior accordingly.</button>
+            <div class="panel">
+                <p>Никто не идеален поэтому всегда лучше узнать как сделать лучше.</p>
+            </div>
+        </article>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
