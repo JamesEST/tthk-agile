@@ -21,7 +21,7 @@ body {
   place-items: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: linear-gradient(245deg, rgba(67,206,162,1) 0%, rgba(24,90,157,1) 100%); 
+  background-image: linear-gradient(to right, #ffc3a0 0%, #ffafbd 100%);
 }
 
 .head{
@@ -48,6 +48,12 @@ body {
 @media (min-width: 800px) {
   .page-content {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .page-content {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1300px;
   }
 }
 
@@ -94,18 +100,18 @@ body {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url(https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?size=626&ext=jpg);
+  background-image: url(https://i.pinimg.com/originals/a1/0c/64/a10c64a088921fdd4e1ec0ecd1208ea1.png);
   background-position: center;
   background-size: cover;
 }
 .card:nth-child(2):before {
-  background-image: url(https://image.freepik.com/free-vector/abstract-digital-background-with-technology-circuit-board-texture_41981-1584.jpg);
+  background-image: url(https://i.pinimg.com/736x/3d/f7/1b/3df71b82d33393267bbe6ecf9786b925.jpg);
 }
 .card:nth-child(3):before {
-  background-image: url(https://image.freepik.com/free-vector/computer-icons-technology-background-vector-set_23-2147721684.jpg?3);
+  background-image: url(https://picsy.ru/images/photos/1200/1/fon-gory-ozero-55502.jpg);
 }
 .card:nth-child(4):before {
-  background-image: url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/102800811/original/a438f704c1f280efc16a65ff3f27f5fbd1a744d0/design-modern-coming-soon-page-or-under-construction-page.jpg);
+  background-image: url(https://i.pinimg.com/originals/49/24/ae/4924ae917a9f15afcd199841e171e625.jpg);
   background-position: center;
   background-size: cover;
 }
